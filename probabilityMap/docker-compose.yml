@@ -1,0 +1,7 @@
+version: '3'
+services:
+  neuroimaging:
+    build: .
+    volumes:
+      - ./data:/data
+    command: ["bash", "/opt/getProbMap.sh"]
