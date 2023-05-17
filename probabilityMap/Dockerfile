@@ -10,14 +10,12 @@ RUN apt-get update && apt-get install -y \
     libxext6 \
     libxrender-dev
 
-# Install the MNI152 template
-RUN wget -P /opt https://fsl.fmrib.ox.ac.uk/fsldownloads/standard/MNI152_T1_2mm_brain.nii.gz
-
-# Copy your script into the container
-COPY getProbMap.sh /opt
+# Copy your MNI template and script into the container
+COPY data/mni/avg152T1.nii /opt/MNI152_T1_2mm.nii.gz
+COPY your_script.sh /opt
 
 # Make your script executable
-RUN chmod +x /opt/getProbMap.sh
+RUN chmod +x /opt/your_script.sh
 
 # Set working directory
 WORKDIR /data
