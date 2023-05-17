@@ -12,10 +12,10 @@ RUN apt-get update && apt-get install -y \
 
 # Copy your MNI template and script into the container
 COPY data/mni/avg152T1.nii /opt/MNI152_T1_2mm.nii.gz
-COPY your_script.sh /opt
+COPY getProbMap.sh /opt
 
 # Make your script executable
-RUN chmod +x /opt/your_script.sh
+RUN chmod +x /opt/getProbMap.sh
 
 # Set working directory
 WORKDIR /data
