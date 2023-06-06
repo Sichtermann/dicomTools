@@ -39,23 +39,21 @@ Additionally, Tesseract OCR must be installed on your machine.
     pip install opencv-python-headless
     pip install pytesseract
     ```
+    
+
+    ```bash
+    chmod +x anonBurn.py
+    ```    
 
 ## Usage
 
-1. Import the `remove_text` function from the script.
-
-    ```python
-    from script import remove_text
+    ```bash
+    anonBurn.py path_to_your_folder --overwrite
     ```
-
-2. Call the `remove_text` function with the path to your DICOM file.
-
-    ```python
-    remove_text('path_to_your_dicom_image')
-    ```
-
+    or
     ```bash
     anonBurn.py path_to_your_folder
+    ```
 
     This will create a new DICOM file in the same location, with the same name as the original file but with a '_sanitized' suffix. The new file will be the same as the original, but with all text removed.
 
