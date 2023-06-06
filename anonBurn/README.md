@@ -57,7 +57,7 @@ or
 anonBurn.py path_to_your_folder
 ```
 
-    This will create a new DICOM file in the same location, with the same name as the original file but with a '_sanitized' suffix. The new file will be the same as the original, but with all text removed.
+This will create a new DICOM file in the same location, with the same name as the original file but with a '_sanitized' suffix. The new file will be the same as the original, but with all text removed.
 
 ## Limitations
 
