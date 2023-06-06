@@ -50,9 +50,9 @@ Additionally, Tesseract OCR must be installed on your machine.
 ```bash
 anonBurn.py path_to_your_folder --overwrite
 ```
-    
-    or
-    
+
+or
+   
 ```bash
 anonBurn.py path_to_your_folder
 ```
